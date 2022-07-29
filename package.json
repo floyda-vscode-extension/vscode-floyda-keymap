@@ -1,0 +1,43 @@
+{
+    "publisher": "floydawong",
+    "repository": "https://github.com/floyda-vscode-extension/vscode-floyda-keymap.git",
+    "name": "vscode-floyda-keymap",
+    "displayName": "vscode-floyda-keymap",
+    "description": "Personal `Shortcut Keys Extension` for Vscode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.69.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "alt+m",
+                "command": "editor.action.insertLineAfter",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "alt+i",
+                "command": "cursorUp",
+                "when": "textInputFocus"
+            },
+            {
+                "key": "alt+k",
+                "command": "cursorDown",
+                "when": "textInputFocus"
+            },
+            {
+                "key": "alt+j",
+                "command": "cursorLeft",
+                "when": "textInputFocus"
+            },
+            {
+                "key": "alt+l",
+                "command": "cursorRight",
+                "when": "textInputFocus"
+            }
+        ]
+    }
+}
